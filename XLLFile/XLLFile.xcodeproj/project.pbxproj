@@ -14,11 +14,11 @@
 		A9D753D920885A8000D136F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D753D820885A8000D136F8 /* main.m */; };
 		A9D753E320885A8100D136F8 /* XLLFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D753E220885A8100D136F8 /* XLLFileTests.m */; };
 		A9D753F020885A9F00D136F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D753EF20885A9E00D136F8 /* AppDelegate.m */; };
-		A9D753F920885B0200D136F8 /* XLLFileDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D753F820885B0200D136F8 /* XLLFileDownload.m */; };
 		A9D7540120888ED100D136F8 /* XLLDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7540020888ED100D136F8 /* XLLDocumentController.m */; };
 		A9D7540620889F7F00D136F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A9D7540320889F7F00D136F8 /* LICENSE */; };
 		A9D7540720889F7F00D136F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D7540420889F7F00D136F8 /* README.md */; };
 		A9D7540820889F7F00D136F8 /* XLLFileDownload.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A9D7540520889F7F00D136F8 /* XLLFileDownload.podspec */; };
+		A9D7540C2088A2CB00D136F8 /* XLLFileDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7540B2088A2CB00D136F8 /* XLLFileDownload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +45,13 @@
 		A9D753E420885A8100D136F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9D753EE20885A9E00D136F8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9D753EF20885A9E00D136F8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9D753F720885B0200D136F8 /* XLLFileDownload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLFileDownload.h; sourceTree = "<group>"; };
-		A9D753F820885B0200D136F8 /* XLLFileDownload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLFileDownload.m; sourceTree = "<group>"; };
 		A9D753FF20888ED100D136F8 /* XLLDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLDocumentController.h; sourceTree = "<group>"; };
 		A9D7540020888ED100D136F8 /* XLLDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLDocumentController.m; sourceTree = "<group>"; };
 		A9D7540320889F7F00D136F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		A9D7540420889F7F00D136F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		A9D7540520889F7F00D136F8 /* XLLFileDownload.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = XLLFileDownload.podspec; path = ../../XLLFileDownload.podspec; sourceTree = "<group>"; };
+		A9D7540A2088A2CB00D136F8 /* XLLFileDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLLFileDownload.h; sourceTree = "<group>"; };
+		A9D7540B2088A2CB00D136F8 /* XLLFileDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLLFileDownload.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 		A9D753C820885A8000D136F8 /* XLLFile */ = {
 			isa = PBXGroup;
 			children = (
+				A9D754092088A2CB00D136F8 /* XLLFileAction */,
 				A9D7540220889F5800D136F8 /* Podspec Metadata */,
-				A9D753F620885AF100D136F8 /* XLLFileAction */,
 				A9D753ED20885A9E00D136F8 /* AppDelegate */,
 				A9D753F120885AA600D136F8 /* SupportingFiles */,
 				A9D753CC20885A8000D136F8 /* ViewController.h */,
@@ -135,15 +135,6 @@
 			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		A9D753F620885AF100D136F8 /* XLLFileAction */ = {
-			isa = PBXGroup;
-			children = (
-				A9D753F720885B0200D136F8 /* XLLFileDownload.h */,
-				A9D753F820885B0200D136F8 /* XLLFileDownload.m */,
-			);
-			path = XLLFileAction;
-			sourceTree = "<group>";
-		};
 		A9D7540220889F5800D136F8 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +143,16 @@
 				A9D7540520889F7F00D136F8 /* XLLFileDownload.podspec */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A9D754092088A2CB00D136F8 /* XLLFileAction */ = {
+			isa = PBXGroup;
+			children = (
+				A9D7540A2088A2CB00D136F8 /* XLLFileDownload.h */,
+				A9D7540B2088A2CB00D136F8 /* XLLFileDownload.m */,
+			);
+			name = XLLFileAction;
+			path = ../../XLLFileAction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D753F920885B0200D136F8 /* XLLFileDownload.m in Sources */,
+				A9D7540C2088A2CB00D136F8 /* XLLFileDownload.m in Sources */,
 				A9D753F020885A9F00D136F8 /* AppDelegate.m in Sources */,
 				A9D753CE20885A8000D136F8 /* ViewController.m in Sources */,
 				A9D7540120888ED100D136F8 /* XLLDocumentController.m in Sources */,
