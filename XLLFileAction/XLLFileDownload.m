@@ -7,6 +7,7 @@
 //  文件断点下载
 
 #import "XLLFileDownload.h"
+#import "XLLDownloadTaskItem+Properties.h"
 #import <pthread.h>
 
 //文件存放目录名称

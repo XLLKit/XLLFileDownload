@@ -26,16 +26,6 @@ typedef NS_ENUM(NSInteger, XLLDownloadState) {
 @property (nonatomic, copy) void(^stateBlock)(XLLDownloadState state);
 
 /**
- 下载任务
- */
-@property (nonatomic, strong) NSURLSessionDataTask *task;
-
-/**
- 流
- */
-@property (nonatomic, strong) NSOutputStream *stream;
-
-/**
  下载链接
  */
 @property (nonatomic, copy) NSString *fileUrl;

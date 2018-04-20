@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A91EBEF12089F11200DF4E17 /* XLLDownloadTaskItem+Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLLDownloadTaskItem+Properties.h"; sourceTree = "<group>"; };
 		A9D753C620885A8000D136F8 /* XLLFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLLFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D753CC20885A8000D136F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A9D753CD20885A8000D136F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 			children = (
 				A9D7540A2088A2CB00D136F8 /* XLLFileDownload.h */,
 				A9D7540B2088A2CB00D136F8 /* XLLFileDownload.m */,
+				A91EBEF12089F11200DF4E17 /* XLLDownloadTaskItem+Properties.h */,
 			);
 			name = XLLFileAction;
 			path = ../../XLLFileAction;
