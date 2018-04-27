@@ -113,7 +113,7 @@ static XLLFileDownload *instance_ = nil;
         }
         return;
     }
-    if (self.tasks.count > self.maximumTaskCount) {
+    if (self.tasks.count >= self.maximumTaskCount) {
         if (state) {
             //任务达到上限
             state(XLLDownloadStateFailed);
